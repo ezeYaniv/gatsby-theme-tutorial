@@ -1,3 +1,8 @@
+# Gatsby Theme Tutorial
+## Introduction
+Followed the tutorial located at https://www.gatsbyjs.com/tutorial/building-a-theme/ to learn how to create custom Gatsby themes and consume in other projects
+
+## Yarn workspaces
 Yarn workspaces are good for Gatsby theming because they allow you to keep multiple packages in a single parent directory and link dependencies.
 
 In the root folder, create the main package.json.
@@ -10,6 +15,7 @@ To start, created two Yarn workspaces: gatsby-theme-events and site. Both of the
 
 These workspaces can be run separately, or as a dependency of the other. In this case, gatsby-theme-events is a dependency of site.
 
+## Initial package installs
 Add dependencies in site:
 - Run the command `yarn workspace site add gatsby react react-dom gatsby-theme-events@*`
   - this adds gatsby, react, react-dom, and gatsby-theme-events as dependencies in site
